@@ -13,7 +13,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-list menu sm-border card-menu margin-top" @click="gotoCourse()">
 			<view class="cu-item arrow">
 				<view class="content">
 					<text class="cuIcon-write text-grey"></text>
@@ -21,7 +21,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-list menu sm-border card-menu margin-top" @click="gotoGrade()">
 			<view class="cu-item arrow">
 				<view class="content">
 					<text class="cuIcon-punch text-grey"></text>
@@ -29,39 +29,8 @@
 				</view>
 			</view>
 		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
-			<view class="cu-item arrow">
-				<view class="content">
-					<text class="cuIcon-remind text-grey"></text>
-					<text class="text-grey">考试安排</text>
-				</view>
-			</view>
-		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
-			<view class="cu-item arrow">
-				<view class="content">
-					<text class="cuIcon-refresh text-grey"></text>
-					<text class="text-grey">检查更新</text>
-				</view>
-			</view>
-		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
-			<view class="cu-item arrow">
-				<view class="content">
-					<text class="cuIcon-repair text-grey"></text>
-					<text class="text-grey">意见反馈</text>
-				</view>
-			</view>
-		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
-			<view class="cu-item arrow">
-				<view class="content">
-					<text class="cuIcon-hot text-grey"></text>
-					<text class="text-grey">关于程序</text>
-				</view>
-			</view>
-		</view>
-		<view class="cu-list menu sm-border card-menu margin-top">
+	
+		<view class="cu-list menu sm-border card-menu margin-top" @click="gotoLogin()">
 			<view class="cu-item arrow">
 				<view class="content">
 					<text class="cuIcon-usefull text-grey"></text>
@@ -69,6 +38,11 @@
 				</view>
 			</view>
 		</view>
+		<view style="text-align: center;padding-top: 30px;">
+			<image style="width: 250rpx;height: 250rpx;" src="https://www.syfit.cn/img/barcode.png"></image><br/>
+			<text style="color: #39B54A;">分享此小程序给你的朋友</text>
+		</view>
+		
 	</view>
 </template>
 
@@ -76,9 +50,20 @@
 	export default {
 		methods:{
 			gotoStuinfo:function(){
-				console.log('cao')
 				uni.navigateTo({
 					url:'../plugin/stuinfo'
+				})
+			},gotoCourse:function(){
+				uni.navigateTo({
+					url:'../plugin/course'
+				})
+			},gotoGrade:function(){
+				uni.navigateTo({
+					url:'../plugin/grade'
+				})
+			},gotoLogin:function(){
+				uni.navigateTo({
+					url:'../login/login'
 				})
 			}
 		}

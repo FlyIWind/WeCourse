@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 
-import socket from './js_sdk/plus-websocket'
-Object.assign(uni, socket)
+// import socket from './js_sdk/plus-websocket/index.js'
+// Object.assign(uni, socket)
 import components from './pages/component/home.vue'
 Vue.component('components',components)
 

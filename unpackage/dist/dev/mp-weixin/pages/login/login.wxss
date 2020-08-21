@@ -1,0 +1,9 @@
+
+.logintitle{
+	background: -webkit-linear-gradient(right, lightblue, blue);
+	background: linear-gradient(to left, lightblue, blue);
+	        -webkit-background-clip: text;
+	        color: transparent;
+	text-align: center;
+}
+

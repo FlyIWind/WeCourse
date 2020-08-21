@@ -1,5 +1,5 @@
 {
-    "name" : "WeCourse",
+    "name" : "商院微课表",
     "appid" : "__UNI__7EEB908",
     "description" : "",
     "versionName" : "ColorUi for UniApp 2.1.4",
@@ -40,22 +40,30 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
-        }
+            "sdkConfigs" : {
+                "ad" : {}
+            }
+        },
+        "nvueLaunchMode" : ""
     },
     /* SDK配置 */
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wx61699d4b6b8b725e",
         "setting" : {
             "urlCheck" : false,
             "es6" : true
         }
     },
     "h5" : {
-        "title" : "ColorUi for UniApp",
-        "domain" : "demo.color-ui.com"
+        "title" : "微课表",
+        "domain" : "we.syfit.cn",
+        "devServer" : {
+            "https" : false
+        },
+        "router" : {
+            "base" : "./"
+        }
     }
 }

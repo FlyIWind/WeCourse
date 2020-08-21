@@ -1,5 +1,18 @@
 <template>
 	<view>
+		<view class="cu-modal" :class="modalName=='Modal'?'show':''">
+			<view class="cu-dialog">
+				<view class="cu-bar bg-white justify-end">
+					<view class="content">登录失败</view>
+					<view class="action" @tap="hideModal">
+						<text class="cuIcon-close text-red"></text>
+					</view>
+				</view>
+				<view class="padding-xl">
+					{{alertmsg}}
+				</view>
+			</view>
+		</view>
 		<image src="/static/componentBg.png" mode="widthFix" class="response"></image>
 		<h1 class="logintitle">登录</h1>
 		<view class="input-group">
@@ -30,41 +43,30 @@
 			return{
 				username:null,
 				password:null,
-				isLogin:false
+				isLogin:false,
+				modalName: null,
+				alertmsg:null,
 			}
 		},
 		mounted:function(){
-			var that = this;
-			var socketOpen = false;
-			var socketMsgQueue = [];
-			uni.connectSocket({
-				url: config.service
-			});
-			uni.onSocketOpen(function(res) {
-				socketOpen = true;
-				for (var i = 0; i < socketMsgQueue.length; i++) {
-					sendSocketMessage(socketMsgQueue[i]);
-				}
-				socketMsgQueue = [];
-			});
-			uni.onSocketError(function(e){
-				alert('服务器连接失败！')
-			})
-			uni.onSocketClose(function(){
-				uni.navigateTo({
-					url:'../index/index'
-				})
-			})
+			var that = this
 			uni.onSocketMessage(function(res) {
 				console.log(res.data);
-				if(res.data=="登录成功"){
-					localStorage.setItem('username',that.username);
-					localStorage.setItem('password',that.password);
-					uni.closeSocket();
-
-				}else{
-					alert('登录失败！');
-					that.isLogin = false;
+				res.data = JSON.parse(res.data);
+				if(res.data.Type=="login"){
+						res.data = res.data.Data
+						if(res.data=="登录成功"){
+							uni.setStorage({key:'username',data:that.username});
+							uni.setStorage({key:'password',data:that.password});
+							uni.redirectTo({
+								url:'../index/index'
+							})
+						}else{
+							//alert('登录失败！');
+							that.alertmsg = "登录失败，请检查用户名或密码是否正确";
+							that.modalName = "Modal";
+							that.isLogin = false;
+						}
 				}
 			}
 			);
@@ -73,7 +75,9 @@
 			login:function(){
 				if(!this.isLogin){
 					if(this.username==null||this.password==null||this.username==""||this.password==""||this.username.length==0||this.password.length==0){
-						alert('用户名或密码不能为空！');
+						//alert('用户名或密码不能为空！');
+						this.alertmsg = "用户名或密码不能为空";
+						this.modalName = "Modal";
 						return;
 					}
 					this.isLogin = true;
@@ -85,7 +89,12 @@
 					}
 					sendSocketMessage('{"Type":"login","UserName":"'+that.username+'","PassWord":"'+that.password+'","Week":1}')
 				}
-			}
+			},showModal(e) {
+				this.modalName = "Modal";
+			},
+			hideModal(e) {
+				this.modalName = null
+			},
 		}
 	}
 </script>

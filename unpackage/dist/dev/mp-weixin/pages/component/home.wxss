@@ -2,4 +2,10 @@
 .page {
 	height: 100vh;
 }
+.notice{
+	background: -webkit-linear-gradient(left, red, blue);
+	background: linear-gradient(to right, red, blue);
+	        -webkit-background-clip: text;
+	        color: transparent;
+}
 

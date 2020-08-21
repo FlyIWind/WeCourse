@@ -1,6 +1,9 @@
 <template>
 	<view>
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">学籍信息</block></cu-custom>
+		<view class="cu-load load-modal" v-if="isLoading">
+			<view class="gray-text">加载中...</view>
+		</view>
 		<view class="cu-list menu sm-border margin-top">
 			<view style="text-align: center;">
 				<image class="cu-avatar radius xl" :src="userPhoto"></image>
@@ -55,6 +58,7 @@
 	export default {
 		data(){
 			return{
+			isLoading:true,
 			userPhoto:'../../static/logo.png',
 			userInfo:
 				{
@@ -72,30 +76,22 @@
 			}
 		},
 		mounted:function(){
-		var socketOpen = false;
-		var socketMsgQueue = [];
 		var that = this;
-		var photo = uni.connectSocket({
-			url: config.service
+		uni.sendSocketMessage({
+			data: '{"Type":"photo","UserName":"'+uni.getStorageSync('username')+'","PassWord":"'+uni.getStorageSync('password')+'","Week":null}'
 		});
-		photo.onOpen(function(res) {
-			console.log('连接成功')
-			socketOpen = true;
-			photo.send({
-				data: '{"Type":"photo","UserName":"'+localStorage.getItem('username')+'","PassWord":"'+localStorage.getItem('password')+'","Week":null}'
-			});
-		});
-		photo.onError(function(e){
-			alert('服务器连接失败！')
-		})
-		photo.onMessage(function(res) {
-			if(res.data.indexOf('data:image/jpg;base64')!=-1){
+		uni.onSocketMessage(function(res) {
+			res.data = JSON.parse(res.data);
+			if(res.data.Type=="photo"){
+				res.data = res.data.Data;
 				that.$data.userPhoto = res.data;
-				photo.send({
-					data: '{"Type":"account","UserName":"'+localStorage.getItem('username')+'","PassWord":"'+localStorage.getItem('password')+'","Week":null}'
-				})
-			}else{
-				that.$data.userInfo = JSON.parse(res.data);
+				uni.sendSocketMessage({data: '{"Type":"account","UserName":"'+uni.getStorageSync('username')+'","PassWord":"'+uni.getStorageSync('password')+'","Week":null}'
+				});
+			}
+			if(res.data.Type=="account"){
+				res.data = res.data.Data;
+				that.$data.userInfo = res.data;
+				that.$data.isLoading = false;
 			}
 			
 		});

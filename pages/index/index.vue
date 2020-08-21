@@ -1,7 +1,7 @@
 <template>
 	<view v-if="isLogin">
-		<components v-show="PageCur=='component'"></components>
-		<plugin v-show="PageCur=='about'"></plugin>
+		<components v-if="PageCur=='component'"></components>
+		<plugin v-if="PageCur=='about'"></plugin>
 		<view class="cu-bar tabbar bg-white shadow foot">
 			<view class="action" @click="NavChange" data-cur="component">
 				<view class='cuIcon-cu-image'>
@@ -32,13 +32,15 @@
 				this.PageCur = e.currentTarget.dataset.cur
 			}
 		},mounted:function(){
-			if(localStorage.getItem('username')==null||localStorage.getItem('password')==null){
-				uni.navigateTo({
-					url:'../login/login'
-				})
-			}else{
-				this.isLogin = true;
-			}
+
+				if(uni.getStorageSync('username').length==0||uni.getStorageSync('password').length==0){
+					console.log('cnm')
+					uni.redirectTo({
+						url:'../login/login'
+					})
+				}else{
+					this.isLogin = true;
+				}
 		}
 	}
 </script>

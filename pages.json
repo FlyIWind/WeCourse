@@ -12,6 +12,14 @@
 		{
 			"path": "pages/plugin/stuinfo",
 			"style": {}
+		},
+		{
+			"path": "pages/plugin/course",
+			"style": {}
+		},
+		{
+			"path": "pages/plugin/grade",
+			"style": {}
 		}
 	],
 	"globalStyle": {
@@ -21,7 +29,7 @@
 			"allowsBounceVertical": "NO"
 		},
 		"navigationBarBackgroundColor": "#0081ff",
-		"navigationBarTitleText": "ColorUi for UniApp",
+		"navigationBarTitleText": "微课表",
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},
@@ -30,7 +38,7 @@
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [{
 				"name": "表单", //模式名称
-				"path": "pages/component/form", //启动页面
+				"path": "pages/index/index", //启动页面
 				"query": "" //启动参数
 			}
 		]

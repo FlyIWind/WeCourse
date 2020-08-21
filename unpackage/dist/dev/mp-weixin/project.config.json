@@ -8,7 +8,7 @@
     "es6": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.9.2",
+  "libVersion": "",
   "appid": "touristappid",
   "projectname": "WeCourse",
   "condition": {
@@ -31,7 +31,7 @@
           "name": "表单",
           "query": "",
           "id": 0,
-          "pathName": "pages/component/form"
+          "pathName": "pages/index/index"
         }
       ]
     }

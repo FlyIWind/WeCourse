@@ -1,5 +1,6 @@
 <script>
 	import Vue from 'vue'
+	import config from 'config.js'
 	export default {
 		onLaunch: function() {
 			uni.getSystemInfo({
@@ -107,9 +108,19 @@
 		},
 		onShow: function() {
 			console.log('App Show')
+			uni.connectSocket({
+				url: config.service
+			});
+			uni.onSocketOpen(function(){
+				console.log('连接成功')
+			})
+			uni.onSocketError(function(){
+				console.log('出错了')
+			})
 		},
 		onHide: function() {
 			console.log('App Hide')
+			//uni.closeSocket();
 		}
 
 	}

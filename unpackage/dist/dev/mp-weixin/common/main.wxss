@@ -25,8 +25,7 @@ textarea,
 label,
 navigator,
 image {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 .round {
 	border-radius: 5000rpx;
@@ -54,7 +53,7 @@ image.loading::before {
 	z-index: -2;
 }
 image.loading::after {
-	content: "\E7F1";
+	content: "\e7f1";
 	font-family: "cuIcon";
 	position: absolute;
 	top: 0;
@@ -87,7 +86,7 @@ radio {
 switch::after,
 switch::before {
 	font-family: "cuIcon";
-	content: "\E645";
+	content: "\e645";
 	position: absolute;
 	color: #ffffff !important;
 	top: 0%;
@@ -98,10 +97,8 @@ switch::before {
 	text-align: center;
 	pointer-events: none;
 	-webkit-transform: scale(0, 0);
-	    -ms-transform: scale(0, 0);
 	        transform: scale(0, 0);
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
 	bottom: 0;
@@ -109,31 +106,26 @@ switch::before {
 	margin: auto;
 }
 switch::before {
-	content: "\E646";
+	content: "\e646";
 	right: 0;
 	-webkit-transform: scale(1, 1);
-	    -ms-transform: scale(1, 1);
 	        transform: scale(1, 1);
 	left: auto;
 }
 switch[checked]::after,
 switch.checked::after {
 	-webkit-transform: scale(1, 1);
-	    -ms-transform: scale(1, 1);
 	        transform: scale(1, 1);
 }
 switch[checked]::before,
 switch.checked::before {
 	-webkit-transform: scale(0, 0);
-	    -ms-transform: scale(0, 0);
 	        transform: scale(0, 0);
 }
-
-
 radio::before,
 checkbox::before {
 	font-family: "cuIcon";
-	content: "\E645";
+	content: "\e645";
 	position: absolute;
 	color: #ffffff !important;
 	top: 50%;
@@ -143,10 +135,8 @@ checkbox::before {
 	line-height: 16px;
 	pointer-events: none;
 	-webkit-transform: scale(1, 1);
-	    -ms-transform: scale(1, 1);
 	        transform: scale(1, 1);
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
 }
@@ -162,11 +152,8 @@ checkbox.round .wx-checkbox-input,
 checkbox.round .uni-checkbox-input {
 	border-radius: 100rpx;
 }
-
-
 switch[checked]::before {
 	-webkit-transform: scale(0, 0);
-	    -ms-transform: scale(0, 0);
 	        transform: scale(0, 0);
 }
 switch .wx-switch-input,
@@ -193,20 +180,16 @@ switch .uni-switch-input::after {
 	bottom: 0rpx;
 	position: absolute;
 	-webkit-transform: scale(0.9, 0.9);
-	    -ms-transform: scale(0.9, 0.9);
 	        transform: scale(0.9, 0.9);
 	-webkit-transition: all 0.1s ease-in-out 0s;
-	-o-transition: all 0.1s ease-in-out 0s;
 	transition: all 0.1s ease-in-out 0s;
 }
 switch .wx-switch-input.wx-switch-input-checked::after,
 switch .uni-switch-input.uni-switch-input-checked::after {
 	margin: auto;
 	left: 22px;
-	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 	-webkit-transform: scale(0.9, 0.9);
-	    -ms-transform: scale(0.9, 0.9);
 	        transform: scale(0.9, 0.9);
 }
 radio-group {
@@ -245,17 +228,18 @@ radio.radio .uni-radio-input-checked::after {
 	bottom: 0;
 	margin: auto;
 	border-radius: 200rpx;
-	
 
-	
+
+
+
+
 	border: 8px solid #ffffff !important;
-	
 }
 .switch-sex::after {
-	content: "\E71C";
+	content: "\e71c";
 }
 .switch-sex::before {
-	content: "\E71A";
+	content: "\e71a";
 }
 .switch-sex .wx-switch-input,
 .switch-sex .uni-switch-input {
@@ -470,14 +454,11 @@ radio.white.checked .uni-radio-input {
 	left: 0;
 	border-radius: inherit;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	pointer-events: none;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 .solid::after {
 	border: 1rpx solid rgba(0, 0, 0, 0.1);
@@ -536,8 +517,7 @@ radio.white.checked .uni-radio-input {
 }
 .shadow-warp {
 	position: relative;
-	-webkit-box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
 }
 .shadow-warp:before,
 .shadow-warp:after {
@@ -547,10 +527,8 @@ radio.white.checked .uni-radio-input {
 	bottom: 30rpx;
 	left: 20rpx;
 	width: 50%;
-	-webkit-box-shadow: 0 30rpx 20rpx rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 30rpx 20rpx rgba(0, 0, 0, 0.2);
+	box-shadow: 0 30rpx 20rpx rgba(0, 0, 0, 0.2);
 	-webkit-transform: rotate(-3deg);
-	    -ms-transform: rotate(-3deg);
 	        transform: rotate(-3deg);
 	z-index: -1;
 }
@@ -558,7 +536,6 @@ radio.white.checked .uni-radio-input {
 	right: 20rpx;
 	left: auto;
 	-webkit-transform: rotate(3deg);
-	    -ms-transform: rotate(3deg);
 	        transform: rotate(3deg);
 }
 .shadow-blur {
@@ -578,11 +555,9 @@ radio.white.checked .uni-radio-input {
 	z-index: -1;
 	opacity: 0.4;
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	border-radius: inherit;
 	-webkit-transform: scale(1, 1);
-	    -ms-transform: scale(1, 1);
 	        transform: scale(1, 1);
 }
 
@@ -594,18 +569,14 @@ radio.white.checked .uni-radio-input {
 	border: 0rpx;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 0 30rpx;
 	font-size: 28rpx;
 	height: 64rpx;
@@ -615,7 +586,6 @@ radio.white.checked .uni-radio-input {
 	overflow: visible;
 	margin-left: initial;
 	-webkit-transform: translate(0rpx, 0rpx);
-	    -ms-transform: translate(0rpx, 0rpx);
 	        transform: translate(0rpx, 0rpx);
 	margin-right: initial;
 }
@@ -638,13 +608,10 @@ radio.white.checked .uni-radio-input {
 	left: 0;
 	border: 1rpx solid currentColor;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	border-radius: 12rpx;
 	z-index: 1;
 	pointer-events: none;
@@ -691,7 +658,6 @@ button.cuIcon.lg {
 }
 .cu-btn.button-hover {
 	-webkit-transform: translate(1rpx, 1rpx);
-	    -ms-transform: translate(1rpx, 1rpx);
 	        transform: translate(1rpx, 1rpx);
 }
 .block {
@@ -700,7 +666,6 @@ button.cuIcon.lg {
 .cu-btn.block {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 .cu-btn[disabled] {
@@ -717,18 +682,14 @@ button.cuIcon.lg {
 	position: relative;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 0rpx 16rpx;
 	height: 48rpx;
 	font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -746,13 +707,10 @@ button.cuIcon.lg {
 	left: 0;
 	border: 1rpx solid currentColor;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	border-radius: inherit;
 	z-index: 1;
 	pointer-events: none;
@@ -777,7 +735,6 @@ button.cuIcon.lg {
 .cu-capsule {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	vertical-align: middle;
 }
@@ -849,16 +806,13 @@ button.cuIcon.lg {
 	padding: 0;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	text-align: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	background-color: #ccc;
 	color: #ffffff;
@@ -914,11 +868,9 @@ button.cuIcon.lg {
 	background-color: #ebeef5;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	width: 100%;
 }
@@ -937,30 +889,24 @@ button.cuIcon.lg {
 	height: 100%;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	justify-items: flex-end;
 	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
 	font-size: 20rpx;
 	color: #ffffff;
 	-webkit-transition: width 0.6s ease;
-	-o-transition: width 0.6s ease;
 	transition: width 0.6s ease;
 }
 .cu-progress text {
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	font-size: 20rpx;
 	color: #333333;
@@ -970,7 +916,7 @@ button.cuIcon.lg {
 	padding-right: 60rpx;
 }
 .cu-progress.striped view {
-	background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 	background-size: 72rpx 72rpx;
 }
@@ -1009,24 +955,24 @@ to {
 	margin-right: 6rpx;
 }
 .cu-load.loading::before {
-	content: "\E67A";
+	content: "\e67a";
 	-webkit-animation: cuIcon-spin 2s infinite linear;
 	        animation: cuIcon-spin 2s infinite linear;
 }
 .cu-load.loading::after {
-	content: "\52A0\8F7D\4E2D...";
+	content: "加载中...";
 }
 .cu-load.over::before {
-	content: "\E64A";
+	content: "\e64a";
 }
 .cu-load.over::after {
-	content: "\6CA1\6709\66F4\591A\4E86";
+	content: "没有更多了";
 }
 .cu-load.erro::before {
-	content: "\E658";
+	content: "\e658";
 }
 .cu-load.erro::after {
-	content: "\52A0\8F7D\5931\8D25";
+	content: "加载失败";
 }
 .cu-load.load-cuIcon::before {
 	font-size: 32rpx;
@@ -1048,24 +994,19 @@ to {
 	height: 260rpx;
 	background-color: #ffffff;
 	border-radius: 10rpx;
-	-webkit-box-shadow: 0 0 0rpx 2000rpx rgba(0, 0, 0, 0.5);
-	        box-shadow: 0 0 0rpx 2000rpx rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 0rpx 2000rpx rgba(0, 0, 0, 0.5);
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	font-size: 28rpx;
 	z-index: 9999;
@@ -1111,7 +1052,6 @@ to {
 	height: 4rpx;
 	overflow: hidden;
 	-webkit-transition: all 200ms ease 0s;
-	-o-transition: all 200ms ease 0s;
 	transition: all 200ms ease 0s;
 }
 .load-progress .load-progress-spinner {
@@ -1126,7 +1066,6 @@ to {
 	display: block;
 	width: 24rpx;
 	height: 24rpx;
-	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: solid 4rpx transparent;
 	border-top-color: inherit;
@@ -1168,15 +1107,12 @@ to {
 }
 .cu-list>.cu-item {
 	-webkit-transition: all .6s ease-in-out 0s;
-	-o-transition: all .6s ease-in-out 0s;
 	transition: all .6s ease-in-out 0s;
 	-webkit-transform: translateX(0rpx);
-	    -ms-transform: translateX(0rpx);
 	        transform: translateX(0rpx)
 }
 .cu-list>.cu-item.move-cur {
 	-webkit-transform: translateX(-260rpx);
-	    -ms-transform: translateX(-260rpx);
 	        transform: translateX(-260rpx)
 }
 .cu-list>.cu-item .move {
@@ -1184,30 +1120,24 @@ to {
 	right: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	width: 260rpx;
 	height: 100%;
 	-webkit-transform: translateX(100%);
-	    -ms-transform: translateX(100%);
 	        transform: translateX(100%)
 }
 .cu-list>.cu-item .move view {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center
 }
 .cu-list.menu-avatar {
@@ -1217,18 +1147,15 @@ to {
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	padding-right: 10rpx;
 	height: 140rpx;
 	background-color: #ffffff;
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center
 }
 .cu-list.menu-avatar>.cu-item>.cu-avatar {
@@ -1251,11 +1178,9 @@ to {
 	font-size: 30rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center
 }
 .cu-list.menu-avatar>.cu-item .content .cu-tag.sm {
@@ -1278,7 +1203,6 @@ to {
 	width: auto;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 }
 .cu-list.menu-avatar.comment>.cu-item {
@@ -1287,25 +1211,21 @@ to {
 }
 .cu-list.menu-avatar.comment .cu-avatar {
 	-webkit-align-self: flex-start;
-	    -ms-flex-item-align: start;
 	        align-self: flex-start
 }
 .cu-list.menu>.cu-item {
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	padding: 0 30rpx;
 	min-height: 100rpx;
 	background-color: #ffffff;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center
 }
 .cu-list.menu>.cu-item:last-child:after {
@@ -1316,18 +1236,15 @@ to {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	width: 200%;
 	height: 200%;
 	border-bottom: 1rpx solid #ddd;
 	border-radius: inherit;
 	content: " ";
 	-webkit-transform: scale(.5);
-	    -ms-transform: scale(.5);
 	        transform: scale(.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	pointer-events: none
 }
@@ -1350,7 +1267,7 @@ to {
 	width: 30rpx;
 	height: 30rpx;
 	color: #8799a3;
-	content: "\E6A3";
+	content: "\e6a3";
 	text-align: center;
 	font-size: 34rpx;
 	font-family: cuIcon;
@@ -1361,7 +1278,6 @@ to {
 	background-color: transparent;
 	-webkit-box-pack: start;
 	-webkit-justify-content: flex-start;
-	    -ms-flex-pack: start;
 	        justify-content: flex-start
 }
 .cu-list.menu>.cu-item button.content:after {
@@ -1373,11 +1289,9 @@ to {
 .cu-list.menu>.cu-item .content>view:first-child {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center
 }
 .cu-list.menu>.cu-item .content>text[class*=cuIcon] {
@@ -1398,7 +1312,6 @@ to {
 	line-height: 1.6em;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1
 }
 .cu-list.menu>.cu-item .content .cu-tag.sm {
@@ -1423,24 +1336,20 @@ to {
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	padding: 20rpx 0 30rpx;
 	-webkit-transition-duration: 0s;
-	     -o-transition-duration: 0s;
 	        transition-duration: 0s;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column
 }
 .cu-list.grid>.cu-item:after {
 	position: absolute;
 	top: 0;
 	left: 0;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	width: 200%;
 	height: 200%;
 	border-right: 1px solid rgba(0, 0, 0, .1);
@@ -1448,10 +1357,8 @@ to {
 	border-radius: inherit;
 	content: " ";
 	-webkit-transform: scale(.5);
-	    -ms-transform: scale(.5);
 	        transform: scale(.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	pointer-events: none
 }
@@ -1506,32 +1413,26 @@ to {
 .cu-bar {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	min-height: 100rpx;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .cu-bar .action {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	height: 100%;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	max-width: 100%;
 }
@@ -1622,8 +1523,7 @@ to {
 	line-height: 60rpx;
 	cursor: none;
 	pointer-events: none;
-	-o-text-overflow: ellipsis;
-	   text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -1635,7 +1535,6 @@ to {
 }
 .cu-bar.btn-group {
 	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
 }
 .cu-bar.btn-group button {
@@ -1644,7 +1543,6 @@ to {
 .cu-bar.btn-group button {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	margin: 0 20rpx;
 	max-width: 50%;
@@ -1657,15 +1555,12 @@ to {
 	color: #333333;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	margin: 0 30rpx;
 }
@@ -1675,7 +1570,6 @@ to {
 .cu-bar .search-form input {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	padding-right: 30rpx;
 	height: 64rpx;
@@ -1695,16 +1589,14 @@ to {
 	width: 100%;
 	top: 0;
 	z-index: 1024;
-	-webkit-box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 .cu-bar.foot {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
 	z-index: 1024;
-	-webkit-box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 .cu-bar.tabbar {
 	padding: 0;
@@ -1716,15 +1608,13 @@ to {
 	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
 }
 .cu-bar.tabbar.shadow {
-	-webkit-box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
-	        box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
+	box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 .cu-bar.tabbar .action {
 	font-size: 22rpx;
 	position: relative;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	text-align: center;
 	padding: 0;
@@ -1739,7 +1629,6 @@ to {
 	width: 140rpx;
 	-webkit-box-flex: initial;
 	-webkit-flex: initial;
-	    -ms-flex: initial;
 	        flex: initial;
 }
 .cu-bar.tabbar .action.add-action {
@@ -1770,8 +1659,7 @@ to {
 	left: 0;
 	right: 0;
 	margin: auto;
-	-webkit-box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
-	        box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
+	box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
 	border-radius: 50rpx;
 	background-color: inherit;
 	z-index: 0;
@@ -1791,18 +1679,14 @@ to {
 .cu-bar.tabbar .btn-group {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	padding: 0 10rpx;
 }
@@ -1829,36 +1713,29 @@ to {
 .cu-bar.tabbar .submit {
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	text-align: center;
 	position: relative;
 	-webkit-box-flex: 2;
 	-webkit-flex: 2;
-	    -ms-flex: 2;
 	        flex: 2;
 	-webkit-align-self: stretch;
-	    -ms-flex-item-align: stretch;
 	        align-self: stretch;
 }
 .cu-bar.tabbar .submit:last-child {
 	-webkit-box-flex: 2.6;
 	-webkit-flex: 2.6;
-	    -ms-flex: 2.6;
 	        flex: 2.6;
 }
 .cu-bar.tabbar .submit+.submit {
 	-webkit-box-flex: 2;
 	-webkit-flex: 2;
-	    -ms-flex: 2;
 	        flex: 2;
 }
 .cu-bar.tabbar.border .action::before {
@@ -1869,10 +1746,8 @@ to {
 	top: 0;
 	left: 0;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	border-right: 1rpx solid rgba(0, 0, 0, 0.1);
 	z-index: 3;
@@ -1891,7 +1766,6 @@ to {
 	min-height: 64rpx;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	font-size: 30rpx;
 	margin: 0 20rpx;
@@ -1916,20 +1790,19 @@ to {
 .cu-custom .cu-bar .content {
 	width: calc(100% - 440rpx);
 }
-
-
 .cu-custom .cu-bar .content image {
 	height: 60rpx;
 	width: 240rpx;
 }
 .cu-custom .cu-bar {
 	min-height: 0px;
-	
+
 	padding-right: 220rpx;
-	
-	
-	-webkit-box-shadow: 0rpx 0rpx 0rpx;
-	        box-shadow: 0rpx 0rpx 0rpx;
+
+
+
+
+	box-shadow: 0rpx 0rpx 0rpx;
 	z-index: 9999;
 }
 .cu-custom .cu-bar .border-custom {
@@ -1947,14 +1820,11 @@ to {
 	left: 0;
 	border-radius: inherit;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	pointer-events: none;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	border: 1rpx solid #ffffff;
 	opacity: 0.5;
 }
@@ -1968,14 +1838,11 @@ to {
 	right: 0;
 	margin: auto;
 	-webkit-transform: scale(0.5);
-	    -ms-transform: scale(0.5);
 	        transform: scale(0.5);
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
 	        transform-origin: 0 0;
 	pointer-events: none;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	opacity: 0.6;
 	background-color: #ffffff;
 }
@@ -1983,7 +1850,6 @@ to {
 	display: block;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	margin: auto !important;
 	text-align: center;
@@ -2060,7 +1926,7 @@ to {
 	left: 36rpx;
 }
 .cu-timeline>.cu-item:not([class*="cuIcon-"])::before {
-	content: "\E763";
+	content: "\e763";
 }
 .cu-timeline>.cu-item[class*="cuIcon-"]::before {
 	background-color: #ffffff;
@@ -2091,18 +1957,15 @@ to {
 .cu-chat {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
 .cu-chat .cu-item {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	padding: 30rpx 30rpx 70rpx;
 	position: relative;
@@ -2116,11 +1979,9 @@ to {
 	margin: 0 40rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 }
 .cu-chat .cu-item>image {
@@ -2131,12 +1992,10 @@ to {
 	border-radius: 6rpx;
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -ms-inline-flexbox;
 	display: inline-flex;
 	max-width: 100%;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	font-size: 30rpx;
 	position: relative;
@@ -2160,18 +2019,15 @@ to {
 	padding: 0 30rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 }
 .cu-chat .cu-item>.main .content::after {
 	content: "";
 	top: 27rpx;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
 	        transform: rotate(45deg);
 	position: absolute;
 	z-index: 100;
@@ -2191,7 +2047,6 @@ to {
 	content: "";
 	top: 30rpx;
 	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
 	        transform: rotate(45deg);
 	position: absolute;
 	z-index: -1;
@@ -2217,7 +2072,6 @@ to {
 .cu-chat .cu-item.self {
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 	text-align: right;
 }
@@ -2328,7 +2182,6 @@ to {
 .cu-card.article>.cu-item .content {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	padding: 0 30rpx;
 }
@@ -2341,20 +2194,16 @@ to {
 .cu-card.article>.cu-item .content .desc {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .cu-card.article>.cu-item .content .text-content {
@@ -2372,16 +2221,13 @@ to {
 	padding: 1rpx 30rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	min-height: 100rpx;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .cu-form-group+.cu-form-group {
@@ -2398,7 +2244,6 @@ to {
 .cu-form-group input {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	font-size: 30rpx;
 	color: #555;
@@ -2407,8 +2252,7 @@ to {
 .cu-form-group>text[class*="cuIcon-"] {
 	font-size: 36rpx;
 	padding: 0;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 .cu-form-group textarea {
 	margin: 32rpx 0 30rpx;
@@ -2417,7 +2261,6 @@ to {
 	line-height: 1.2em;
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	font-size: 28rpx;
 	padding: 0;
@@ -2430,7 +2273,6 @@ to {
 .cu-form-group picker {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	padding-right: 40rpx;
 	overflow: hidden;
@@ -2439,8 +2281,7 @@ to {
 .cu-form-group picker .picker {
 	line-height: 100rpx;
 	font-size: 28rpx;
-	-o-text-overflow: ellipsis;
-	   text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 	width: 100%;
@@ -2449,7 +2290,7 @@ to {
 .cu-form-group picker::after {
 	font-family: cuIcon;
 	display: block;
-	content: "\E6A3";
+	content: "\e6a3";
 	position: absolute;
 	font-size: 34rpx;
 	color: #8799a3;
@@ -2479,7 +2320,6 @@ to {
 	opacity: 0;
 	outline: 0;
 	text-align: center;
-	-ms-transform: scale(1.185);
 	-webkit-transform: scale(1.185);
 	        transform: scale(1.185);
 	-webkit-backface-visibility: hidden;
@@ -2488,7 +2328,6 @@ to {
 	        perspective: 2000rpx;
 	background: rgba(0, 0, 0, 0.6);
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 	pointer-events: none;
 }
@@ -2501,9 +2340,7 @@ to {
 .cu-modal.show {
 	opacity: 1;
 	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
 	        transition-duration: 0.3s;
-	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
 	        transform: scale(1);
 	overflow-x: hidden;
@@ -2537,11 +2374,9 @@ to {
 }
 .cu-modal.drawer-modal {
 	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
 	        transform: scale(1);
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 .cu-modal.drawer-modal .cu-dialog {
@@ -2550,22 +2385,18 @@ to {
 	border-radius: 0;
 	margin: initial;
 	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
 	        transition-duration: 0.3s;
 }
 .cu-modal.drawer-modal.justify-start .cu-dialog {
 	-webkit-transform: translateX(-100%);
-	    -ms-transform: translateX(-100%);
 	        transform: translateX(-100%);
 }
 .cu-modal.drawer-modal.justify-end .cu-dialog {
 	-webkit-transform: translateX(100%);
-	    -ms-transform: translateX(100%);
 	        transform: translateX(100%);
 }
 .cu-modal.drawer-modal.show .cu-dialog {
 	-webkit-transform: translateX(0%);
-	    -ms-transform: translateX(0%);
 	        transform: translateX(0%);
 }
 .cu-modal .cu-dialog>.cu-bar:first-child .action{
@@ -2590,16 +2421,13 @@ swiper[class*="-dot"] .a-swiper-dots,
 swiper[class*="-dot"] .uni-swiper-dots {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	width: 100%;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 }
 swiper.square-dot .wx-swiper-dot,
@@ -2666,8 +2494,7 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 .card-swiper swiper-item {
 	width: 610rpx !important;
 	left: 70rpx;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 40rpx 0rpx 70rpx;
 	overflow: initial;
 }
@@ -2677,19 +2504,15 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 	height: 100%;
 	border-radius: 10rpx;
 	-webkit-transform: scale(0.9);
-	    -ms-transform: scale(0.9);
 	        transform: scale(0.9);
 	-webkit-transition: all 0.2s ease-in 0s;
-	-o-transition: all 0.2s ease-in 0s;
 	transition: all 0.2s ease-in 0s;
 	overflow: hidden;
 }
 .card-swiper swiper-item.cur .swiper-item {
 	-webkit-transform: none;
-	    -ms-transform: none;
 	        transform: none;
 	-webkit-transition: all 0.2s ease-in 0s;
-	-o-transition: all 0.2s ease-in 0s;
 	transition: all 0.2s ease-in 0s;
 }
 .tower-swiper {
@@ -2707,7 +2530,6 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 	left: 50%;
 	margin: auto;
 	-webkit-transition: all 0.2s ease-in 0s;
-	-o-transition: all 0.2s ease-in 0s;
 	transition: all 0.2s ease-in 0s;
 	opacity: 1;
 }
@@ -2727,7 +2549,6 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 .cu-steps {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 scroll-view.cu-steps {
@@ -2740,7 +2561,6 @@ scroll-view.cu-steps .cu-item {
 .cu-steps .cu-item {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 	text-align: center;
 	position: relative;
@@ -2771,7 +2591,7 @@ scroll-view.cu-steps .cu-item {
 }
 .cu-steps.steps-arrow .cu-item::before,
 .cu-steps.steps-arrow .cu-item::after {
-	content: "\E6A3";
+	content: "\e6a3";
 	font-family: 'cuIcon';
 	height: 30rpx;
 	border-bottom-width: 0px;
@@ -2790,7 +2610,6 @@ scroll-view.cu-steps .cu-item {
 	border-bottom: 1px solid currentColor;
 	width: 0px;
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
 .cu-steps .cu-item[class*="text-"]::after {
@@ -2825,37 +2644,31 @@ scroll-view.cu-steps .cu-item {
 	bottom: 0;
 	margin: auto;
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 	-webkit-transform: translateY(0rpx);
-	    -ms-transform: translateY(0rpx);
 	        transform: translateY(0rpx);
 }
 .cu-steps .cu-item[class*="text-"] .num::before {
 	-webkit-transform: translateY(-40rpx);
-	    -ms-transform: translateY(-40rpx);
 	        transform: translateY(-40rpx);
 	color: #ffffff;
 }
 .cu-steps .cu-item .num::after {
 	-webkit-transform: translateY(40rpx);
-	    -ms-transform: translateY(40rpx);
 	        transform: translateY(40rpx);
 	color: #ffffff;
 	-webkit-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
 .cu-steps .cu-item[class*="text-"] .num::after {
-	content: "\E645";
+	content: "\e645";
 	font-family: 'cuIcon';
 	color: #ffffff;
 	-webkit-transform: translateY(0rpx);
-	    -ms-transform: translateY(0rpx);
 	        transform: translateY(0rpx);
 }
 .cu-steps .cu-item[class*="text-"] .num.err::after {
-	content: "\E646";
+	content: "\e646";
 }
 
 /* ==================
@@ -2866,141 +2679,116 @@ scroll-view.cu-steps .cu-item {
 .flex {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 }
 .basis-xs {
 	-webkit-flex-basis: 20%;
-	    -ms-flex-preferred-size: 20%;
 	        flex-basis: 20%;
 }
 .basis-sm {
 	-webkit-flex-basis: 40%;
-	    -ms-flex-preferred-size: 40%;
 	        flex-basis: 40%;
 }
 .basis-df {
 	-webkit-flex-basis: 50%;
-	    -ms-flex-preferred-size: 50%;
 	        flex-basis: 50%;
 }
 .basis-lg {
 	-webkit-flex-basis: 60%;
-	    -ms-flex-preferred-size: 60%;
 	        flex-basis: 60%;
 }
 .basis-xl {
 	-webkit-flex-basis: 80%;
-	    -ms-flex-preferred-size: 80%;
 	        flex-basis: 80%;
 }
 .flex-sub {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
-	    -ms-flex: 1;
 	        flex: 1;
 }
 .flex-twice {
 	-webkit-box-flex: 2;
 	-webkit-flex: 2;
-	    -ms-flex: 2;
 	        flex: 2;
 }
 .flex-treble {
 	-webkit-box-flex: 3;
 	-webkit-flex: 3;
-	    -ms-flex: 3;
 	        flex: 3;
 }
 .flex-direction {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
 .flex-wrap {
 	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
 }
 .align-start {
 	-webkit-box-align: start;
 	-webkit-align-items: flex-start;
-	    -ms-flex-align: start;
 	        align-items: flex-start;
 }
 .align-end {
 	-webkit-box-align: end;
 	-webkit-align-items: flex-end;
-	    -ms-flex-align: end;
 	        align-items: flex-end;
 }
 .align-center {
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 }
 .align-stretch {
 	-webkit-box-align: stretch;
 	-webkit-align-items: stretch;
-	    -ms-flex-align: stretch;
 	        align-items: stretch;
 }
 .self-start {
 	-webkit-align-self: flex-start;
-	    -ms-flex-item-align: start;
 	        align-self: flex-start;
 }
 .self-center {
 	-webkit-align-self: flex-center;
-	    -ms-flex-item-align: flex-center;
 	        align-self: flex-center;
 }
 .self-end {
 	-webkit-align-self: flex-end;
-	    -ms-flex-item-align: end;
 	        align-self: flex-end;
 }
 .self-stretch {
 	-webkit-align-self: stretch;
-	    -ms-flex-item-align: stretch;
 	        align-self: stretch;
 }
 .align-stretch {
 	-webkit-box-align: stretch;
 	-webkit-align-items: stretch;
-	    -ms-flex-align: stretch;
 	        align-items: stretch;
 }
 .justify-start {
 	-webkit-box-pack: start;
 	-webkit-justify-content: flex-start;
-	    -ms-flex-pack: start;
 	        justify-content: flex-start;
 }
 .justify-end {
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 }
 .justify-center {
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 }
 .justify-between {
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .justify-around {
 	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
 }
 
@@ -3008,10 +2796,8 @@ scroll-view.cu-steps .cu-item {
 .grid {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
 }
 .grid.grid-square {
@@ -3037,20 +2823,16 @@ scroll-view.cu-steps .cu-item {
 	right: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
 	        align-items: center;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
 .grid.grid-square>view {
@@ -3490,14 +3272,12 @@ scroll-view.cu-steps .cu-item {
 	color: #666666;
 }
 .bg-shadeTop {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.01)));
-	background-image: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
 	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
 	color: #ffffff;
 }
 .bg-shadeBottom {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.01)), to(rgba(0, 0, 0, 1)));
-	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
 	background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
 	color: #ffffff;
 }
@@ -3550,94 +3330,79 @@ scroll-view.cu-steps .cu-item {
 	background-color: #e7ebed;
 }
 .bg-gradual-red {
-	background-image: -o-linear-gradient(45deg, #f43f3b, #ec008c);
+	background-image: -webkit-linear-gradient(45deg, #f43f3b, #ec008c);
 	background-image: linear-gradient(45deg, #f43f3b, #ec008c);
 	color: #ffffff;
 }
 .bg-gradual-orange {
-	background-image: -o-linear-gradient(45deg, #ff9700, #ed1c24);
+	background-image: -webkit-linear-gradient(45deg, #ff9700, #ed1c24);
 	background-image: linear-gradient(45deg, #ff9700, #ed1c24);
 	color: #ffffff;
 }
 .bg-gradual-green {
-	background-image: -o-linear-gradient(45deg, #39b54a, #8dc63f);
+	background-image: -webkit-linear-gradient(45deg, #39b54a, #8dc63f);
 	background-image: linear-gradient(45deg, #39b54a, #8dc63f);
 	color: #ffffff;
 }
 .bg-gradual-purple {
-	background-image: -o-linear-gradient(45deg, #9000ff, #5e00ff);
+	background-image: -webkit-linear-gradient(45deg, #9000ff, #5e00ff);
 	background-image: linear-gradient(45deg, #9000ff, #5e00ff);
 	color: #ffffff;
 }
 .bg-gradual-pink {
-	background-image: -o-linear-gradient(45deg, #ec008c, #6739b6);
+	background-image: -webkit-linear-gradient(45deg, #ec008c, #6739b6);
 	background-image: linear-gradient(45deg, #ec008c, #6739b6);
 	color: #ffffff;
 }
 .bg-gradual-blue {
-	background-image: -o-linear-gradient(45deg, #0081ff, #1cbbb4);
+	background-image: -webkit-linear-gradient(45deg, #0081ff, #1cbbb4);
 	background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
 	color: #ffffff;
 }
 .shadow[class*="-red"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(204, 69, 59, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(204, 69, 59, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(204, 69, 59, 0.2);
 }
 .shadow[class*="-orange"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(217, 109, 26, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(217, 109, 26, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(217, 109, 26, 0.2);
 }
 .shadow[class*="-yellow"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(224, 170, 7, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(224, 170, 7, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(224, 170, 7, 0.2);
 }
 .shadow[class*="-olive"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(124, 173, 55, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(124, 173, 55, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(124, 173, 55, 0.2);
 }
 .shadow[class*="-green"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(48, 156, 63, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(48, 156, 63, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(48, 156, 63, 0.2);
 }
 .shadow[class*="-cyan"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(28, 187, 180, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(28, 187, 180, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(28, 187, 180, 0.2);
 }
 .shadow[class*="-blue"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(0, 102, 204, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(0, 102, 204, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(0, 102, 204, 0.2);
 }
 .shadow[class*="-purple"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(88, 48, 156, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(88, 48, 156, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(88, 48, 156, 0.2);
 }
 .shadow[class*="-mauve"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(133, 33, 150, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(133, 33, 150, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(133, 33, 150, 0.2);
 }
 .shadow[class*="-pink"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(199, 50, 134, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(199, 50, 134, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(199, 50, 134, 0.2);
 }
 .shadow[class*="-brown"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(140, 88, 53, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(140, 88, 53, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(140, 88, 53, 0.2);
 }
 .shadow[class*="-grey"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
 }
 .shadow[class*="-gray"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2);
 }
 .shadow[class*="-black"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
 }
 .shadow[class*="-white"] {
-	-webkit-box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
-	        box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
+	box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2);
 }
 .text-shadow[class*="-red"] {
 	text-shadow: 6rpx 6rpx 8rpx rgba(204, 69, 59, 0.2);
@@ -3715,7 +3480,6 @@ scroll-view.cu-steps .cu-item {
 	display: block;
 	height: 100%;
 	width: 100%;
-	-o-object-fit: cover;
 	object-fit: cover;
 	position: absolute;
 	top: 0;
@@ -3760,13 +3524,12 @@ scroll-view.cu-steps .cu-item {
 	text-transform: Lowercase;
 }
 .text-price::before {
-	content: "\A5";
+	content: "¥";
 	font-size: 80%;
 	margin-right: 4rpx;
 }
 .text-cut {
-	-o-text-overflow: ellipsis;
-	   text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -3908,905 +3671,902 @@ scroll-view.cu-steps .cu-item {
 	/* iOS 4.1- */
 }
 .cuIcon-appreciate:before {
-	content: "\E644";
+	content: "\e644";
 }
 .cuIcon-check:before {
-	content: "\E645";
+	content: "\e645";
 }
 .cuIcon-close:before {
-	content: "\E646";
+	content: "\e646";
 }
 .cuIcon-edit:before {
-	content: "\E649";
+	content: "\e649";
 }
 .cuIcon-emoji:before {
-	content: "\E64A";
+	content: "\e64a";
 }
 .cuIcon-favorfill:before {
-	content: "\E64B";
+	content: "\e64b";
 }
 .cuIcon-favor:before {
-	content: "\E64C";
+	content: "\e64c";
 }
 .cuIcon-loading:before {
-	content: "\E64F";
+	content: "\e64f";
 }
 .cuIcon-locationfill:before {
-	content: "\E650";
+	content: "\e650";
 }
 .cuIcon-location:before {
-	content: "\E651";
+	content: "\e651";
 }
 .cuIcon-phone:before {
-	content: "\E652";
+	content: "\e652";
 }
 .cuIcon-roundcheckfill:before {
-	content: "\E656";
+	content: "\e656";
 }
 .cuIcon-roundcheck:before {
-	content: "\E657";
+	content: "\e657";
 }
 .cuIcon-roundclosefill:before {
-	content: "\E658";
+	content: "\e658";
 }
 .cuIcon-roundclose:before {
-	content: "\E659";
+	content: "\e659";
 }
 .cuIcon-roundrightfill:before {
-	content: "\E65A";
+	content: "\e65a";
 }
 .cuIcon-roundright:before {
-	content: "\E65B";
+	content: "\e65b";
 }
 .cuIcon-search:before {
-	content: "\E65C";
+	content: "\e65c";
 }
 .cuIcon-taxi:before {
-	content: "\E65D";
+	content: "\e65d";
 }
 .cuIcon-timefill:before {
-	content: "\E65E";
+	content: "\e65e";
 }
 .cuIcon-time:before {
-	content: "\E65F";
+	content: "\e65f";
 }
 .cuIcon-unfold:before {
-	content: "\E661";
+	content: "\e661";
 }
 .cuIcon-warnfill:before {
-	content: "\E662";
+	content: "\e662";
 }
 .cuIcon-warn:before {
-	content: "\E663";
+	content: "\e663";
 }
 .cuIcon-camerafill:before {
-	content: "\E664";
+	content: "\e664";
 }
 .cuIcon-camera:before {
-	content: "\E665";
+	content: "\e665";
 }
 .cuIcon-commentfill:before {
-	content: "\E666";
+	content: "\e666";
 }
 .cuIcon-comment:before {
-	content: "\E667";
+	content: "\e667";
 }
 .cuIcon-likefill:before {
-	content: "\E668";
+	content: "\e668";
 }
 .cuIcon-like:before {
-	content: "\E669";
+	content: "\e669";
 }
 .cuIcon-notificationfill:before {
-	content: "\E66A";
+	content: "\e66a";
 }
 .cuIcon-notification:before {
-	content: "\E66B";
+	content: "\e66b";
 }
 .cuIcon-order:before {
-	content: "\E66C";
+	content: "\e66c";
 }
 .cuIcon-samefill:before {
-	content: "\E66D";
+	content: "\e66d";
 }
 .cuIcon-same:before {
-	content: "\E66E";
+	content: "\e66e";
 }
 .cuIcon-deliver:before {
-	content: "\E671";
+	content: "\e671";
 }
 .cuIcon-evaluate:before {
-	content: "\E672";
+	content: "\e672";
 }
 .cuIcon-pay:before {
-	content: "\E673";
+	content: "\e673";
 }
 .cuIcon-send:before {
-	content: "\E675";
+	content: "\e675";
 }
 .cuIcon-shop:before {
-	content: "\E676";
+	content: "\e676";
 }
 .cuIcon-ticket:before {
-	content: "\E677";
+	content: "\e677";
 }
 .cuIcon-back:before {
-	content: "\E679";
+	content: "\e679";
 }
 .cuIcon-cascades:before {
-	content: "\E67C";
+	content: "\e67c";
 }
 .cuIcon-discover:before {
-	content: "\E67E";
+	content: "\e67e";
 }
 .cuIcon-list:before {
-	content: "\E682";
+	content: "\e682";
 }
 .cuIcon-more:before {
-	content: "\E684";
+	content: "\e684";
 }
 .cuIcon-scan:before {
-	content: "\E689";
+	content: "\e689";
 }
 .cuIcon-settings:before {
-	content: "\E68A";
+	content: "\e68a";
 }
 .cuIcon-questionfill:before {
-	content: "\E690";
+	content: "\e690";
 }
 .cuIcon-question:before {
-	content: "\E691";
+	content: "\e691";
 }
 .cuIcon-shopfill:before {
-	content: "\E697";
+	content: "\e697";
 }
 .cuIcon-form:before {
-	content: "\E699";
+	content: "\e699";
 }
 .cuIcon-pic:before {
-	content: "\E69B";
+	content: "\e69b";
 }
 .cuIcon-filter:before {
-	content: "\E69C";
+	content: "\e69c";
 }
 .cuIcon-footprint:before {
-	content: "\E69D";
+	content: "\e69d";
 }
 .cuIcon-top:before {
-	content: "\E69E";
+	content: "\e69e";
 }
 .cuIcon-pulldown:before {
-	content: "\E69F";
+	content: "\e69f";
 }
 .cuIcon-pullup:before {
-	content: "\E6A0";
+	content: "\e6a0";
 }
 .cuIcon-right:before {
-	content: "\E6A3";
+	content: "\e6a3";
 }
 .cuIcon-refresh:before {
-	content: "\E6A4";
+	content: "\e6a4";
 }
 .cuIcon-moreandroid:before {
-	content: "\E6A5";
+	content: "\e6a5";
 }
 .cuIcon-deletefill:before {
-	content: "\E6A6";
+	content: "\e6a6";
 }
 .cuIcon-refund:before {
-	content: "\E6AC";
+	content: "\e6ac";
 }
 .cuIcon-cart:before {
-	content: "\E6AF";
+	content: "\e6af";
 }
 .cuIcon-qrcode:before {
-	content: "\E6B0";
+	content: "\e6b0";
 }
 .cuIcon-remind:before {
-	content: "\E6B2";
+	content: "\e6b2";
 }
 .cuIcon-delete:before {
-	content: "\E6B4";
+	content: "\e6b4";
 }
 .cuIcon-profile:before {
-	content: "\E6B7";
+	content: "\e6b7";
 }
 .cuIcon-home:before {
-	content: "\E6B8";
+	content: "\e6b8";
 }
 .cuIcon-cartfill:before {
-	content: "\E6B9";
+	content: "\e6b9";
 }
 .cuIcon-discoverfill:before {
-	content: "\E6BA";
+	content: "\e6ba";
 }
 .cuIcon-homefill:before {
-	content: "\E6BB";
+	content: "\e6bb";
 }
 .cuIcon-message:before {
-	content: "\E6BC";
+	content: "\e6bc";
 }
 .cuIcon-addressbook:before {
-	content: "\E6BD";
+	content: "\e6bd";
 }
 .cuIcon-link:before {
-	content: "\E6BF";
+	content: "\e6bf";
 }
 .cuIcon-lock:before {
-	content: "\E6C0";
+	content: "\e6c0";
 }
 .cuIcon-unlock:before {
-	content: "\E6C2";
+	content: "\e6c2";
 }
 .cuIcon-vip:before {
-	content: "\E6C3";
+	content: "\e6c3";
 }
 .cuIcon-weibo:before {
-	content: "\E6C4";
+	content: "\e6c4";
 }
 .cuIcon-activity:before {
-	content: "\E6C5";
+	content: "\e6c5";
 }
 .cuIcon-friendaddfill:before {
-	content: "\E6C9";
+	content: "\e6c9";
 }
 .cuIcon-friendadd:before {
-	content: "\E6CA";
+	content: "\e6ca";
 }
 .cuIcon-friendfamous:before {
-	content: "\E6CB";
+	content: "\e6cb";
 }
 .cuIcon-friend:before {
-	content: "\E6CC";
+	content: "\e6cc";
 }
 .cuIcon-goods:before {
-	content: "\E6CD";
+	content: "\e6cd";
 }
 .cuIcon-selection:before {
-	content: "\E6CE";
+	content: "\e6ce";
 }
 .cuIcon-explore:before {
-	content: "\E6D2";
+	content: "\e6d2";
 }
 .cuIcon-present:before {
-	content: "\E6D3";
+	content: "\e6d3";
 }
 .cuIcon-squarecheckfill:before {
-	content: "\E6D4";
+	content: "\e6d4";
 }
 .cuIcon-square:before {
-	content: "\E6D5";
+	content: "\e6d5";
 }
 .cuIcon-squarecheck:before {
-	content: "\E6D6";
+	content: "\e6d6";
 }
 .cuIcon-round:before {
-	content: "\E6D7";
+	content: "\e6d7";
 }
 .cuIcon-roundaddfill:before {
-	content: "\E6D8";
+	content: "\e6d8";
 }
 .cuIcon-roundadd:before {
-	content: "\E6D9";
+	content: "\e6d9";
 }
 .cuIcon-add:before {
-	content: "\E6DA";
+	content: "\e6da";
 }
 .cuIcon-notificationforbidfill:before {
-	content: "\E6DB";
+	content: "\e6db";
 }
 .cuIcon-explorefill:before {
-	content: "\E6DD";
+	content: "\e6dd";
 }
 .cuIcon-fold:before {
-	content: "\E6DE";
+	content: "\e6de";
 }
 .cuIcon-game:before {
-	content: "\E6DF";
+	content: "\e6df";
 }
 .cuIcon-redpacket:before {
-	content: "\E6E0";
+	content: "\e6e0";
 }
 .cuIcon-selectionfill:before {
-	content: "\E6E1";
+	content: "\e6e1";
 }
 .cuIcon-similar:before {
-	content: "\E6E2";
+	content: "\e6e2";
 }
 .cuIcon-appreciatefill:before {
-	content: "\E6E3";
+	content: "\e6e3";
 }
 .cuIcon-infofill:before {
-	content: "\E6E4";
+	content: "\e6e4";
 }
 .cuIcon-info:before {
-	content: "\E6E5";
+	content: "\e6e5";
 }
 .cuIcon-forwardfill:before {
-	content: "\E6EA";
+	content: "\e6ea";
 }
 .cuIcon-forward:before {
-	content: "\E6EB";
+	content: "\e6eb";
 }
 .cuIcon-rechargefill:before {
-	content: "\E6EC";
+	content: "\e6ec";
 }
 .cuIcon-recharge:before {
-	content: "\E6ED";
+	content: "\e6ed";
 }
 .cuIcon-vipcard:before {
-	content: "\E6EE";
+	content: "\e6ee";
 }
 .cuIcon-voice:before {
-	content: "\E6EF";
+	content: "\e6ef";
 }
 .cuIcon-voicefill:before {
-	content: "\E6F0";
+	content: "\e6f0";
 }
 .cuIcon-friendfavor:before {
-	content: "\E6F1";
+	content: "\e6f1";
 }
 .cuIcon-wifi:before {
-	content: "\E6F2";
+	content: "\e6f2";
 }
 .cuIcon-share:before {
-	content: "\E6F3";
+	content: "\e6f3";
 }
 .cuIcon-wefill:before {
-	content: "\E6F4";
+	content: "\e6f4";
 }
 .cuIcon-we:before {
-	content: "\E6F5";
+	content: "\e6f5";
 }
 .cuIcon-lightauto:before {
-	content: "\E6F6";
+	content: "\e6f6";
 }
 .cuIcon-lightforbid:before {
-	content: "\E6F7";
+	content: "\e6f7";
 }
 .cuIcon-lightfill:before {
-	content: "\E6F8";
+	content: "\e6f8";
 }
 .cuIcon-camerarotate:before {
-	content: "\E6F9";
+	content: "\e6f9";
 }
 .cuIcon-light:before {
-	content: "\E6FA";
+	content: "\e6fa";
 }
 .cuIcon-barcode:before {
-	content: "\E6FB";
+	content: "\e6fb";
 }
 .cuIcon-flashlightclose:before {
-	content: "\E6FC";
+	content: "\e6fc";
 }
 .cuIcon-flashlightopen:before {
-	content: "\E6FD";
+	content: "\e6fd";
 }
 .cuIcon-searchlist:before {
-	content: "\E6FE";
+	content: "\e6fe";
 }
 .cuIcon-service:before {
-	content: "\E6FF";
+	content: "\e6ff";
 }
 .cuIcon-sort:before {
-	content: "\E700";
+	content: "\e700";
 }
 .cuIcon-down:before {
-	content: "\E703";
+	content: "\e703";
 }
 .cuIcon-mobile:before {
-	content: "\E704";
+	content: "\e704";
 }
 .cuIcon-mobilefill:before {
-	content: "\E705";
+	content: "\e705";
 }
 .cuIcon-copy:before {
-	content: "\E706";
+	content: "\e706";
 }
 .cuIcon-countdownfill:before {
-	content: "\E707";
+	content: "\e707";
 }
 .cuIcon-countdown:before {
-	content: "\E708";
+	content: "\e708";
 }
 .cuIcon-noticefill:before {
-	content: "\E709";
+	content: "\e709";
 }
 .cuIcon-notice:before {
-	content: "\E70A";
+	content: "\e70a";
 }
 .cuIcon-upstagefill:before {
-	content: "\E70E";
+	content: "\e70e";
 }
 .cuIcon-upstage:before {
-	content: "\E70F";
+	content: "\e70f";
 }
 .cuIcon-babyfill:before {
-	content: "\E710";
+	content: "\e710";
 }
 .cuIcon-baby:before {
-	content: "\E711";
+	content: "\e711";
 }
 .cuIcon-brandfill:before {
-	content: "\E712";
+	content: "\e712";
 }
 .cuIcon-brand:before {
-	content: "\E713";
+	content: "\e713";
 }
 .cuIcon-choicenessfill:before {
-	content: "\E714";
+	content: "\e714";
 }
 .cuIcon-choiceness:before {
-	content: "\E715";
+	content: "\e715";
 }
 .cuIcon-clothesfill:before {
-	content: "\E716";
+	content: "\e716";
 }
 .cuIcon-clothes:before {
-	content: "\E717";
+	content: "\e717";
 }
 .cuIcon-creativefill:before {
-	content: "\E718";
+	content: "\e718";
 }
 .cuIcon-creative:before {
-	content: "\E719";
+	content: "\e719";
 }
 .cuIcon-female:before {
-	content: "\E71A";
+	content: "\e71a";
 }
 .cuIcon-keyboard:before {
-	content: "\E71B";
+	content: "\e71b";
 }
 .cuIcon-male:before {
-	content: "\E71C";
+	content: "\e71c";
 }
 .cuIcon-newfill:before {
-	content: "\E71D";
+	content: "\e71d";
 }
 .cuIcon-new:before {
-	content: "\E71E";
+	content: "\e71e";
 }
 .cuIcon-pullleft:before {
-	content: "\E71F";
+	content: "\e71f";
 }
 .cuIcon-pullright:before {
-	content: "\E720";
+	content: "\e720";
 }
 .cuIcon-rankfill:before {
-	content: "\E721";
+	content: "\e721";
 }
 .cuIcon-rank:before {
-	content: "\E722";
+	content: "\e722";
 }
 .cuIcon-bad:before {
-	content: "\E723";
+	content: "\e723";
 }
 .cuIcon-cameraadd:before {
-	content: "\E724";
+	content: "\e724";
 }
 .cuIcon-focus:before {
-	content: "\E725";
+	content: "\e725";
 }
 .cuIcon-friendfill:before {
-	content: "\E726";
+	content: "\e726";
 }
 .cuIcon-cameraaddfill:before {
-	content: "\E727";
+	content: "\e727";
 }
 .cuIcon-apps:before {
-	content: "\E729";
+	content: "\e729";
 }
 .cuIcon-paintfill:before {
-	content: "\E72A";
+	content: "\e72a";
 }
 .cuIcon-paint:before {
-	content: "\E72B";
+	content: "\e72b";
 }
 .cuIcon-picfill:before {
-	content: "\E72C";
+	content: "\e72c";
 }
 .cuIcon-refresharrow:before {
-	content: "\E72D";
+	content: "\e72d";
 }
 .cuIcon-colorlens:before {
-	content: "\E6E6";
+	content: "\e6e6";
 }
 .cuIcon-markfill:before {
-	content: "\E730";
+	content: "\e730";
 }
 .cuIcon-mark:before {
-	content: "\E731";
+	content: "\e731";
 }
 .cuIcon-presentfill:before {
-	content: "\E732";
+	content: "\e732";
 }
 .cuIcon-repeal:before {
-	content: "\E733";
+	content: "\e733";
 }
 .cuIcon-album:before {
-	content: "\E734";
+	content: "\e734";
 }
 .cuIcon-peoplefill:before {
-	content: "\E735";
+	content: "\e735";
 }
 .cuIcon-people:before {
-	content: "\E736";
+	content: "\e736";
 }
 .cuIcon-servicefill:before {
-	content: "\E737";
+	content: "\e737";
 }
 .cuIcon-repair:before {
-	content: "\E738";
+	content: "\e738";
 }
 .cuIcon-file:before {
-	content: "\E739";
+	content: "\e739";
 }
 .cuIcon-repairfill:before {
-	content: "\E73A";
+	content: "\e73a";
 }
 .cuIcon-taoxiaopu:before {
-	content: "\E73B";
+	content: "\e73b";
 }
 .cuIcon-weixin:before {
-	content: "\E612";
+	content: "\e612";
 }
 .cuIcon-attentionfill:before {
-	content: "\E73C";
+	content: "\e73c";
 }
 .cuIcon-attention:before {
-	content: "\E73D";
+	content: "\e73d";
 }
 .cuIcon-commandfill:before {
-	content: "\E73E";
+	content: "\e73e";
 }
 .cuIcon-command:before {
-	content: "\E73F";
+	content: "\e73f";
 }
 .cuIcon-communityfill:before {
-	content: "\E740";
+	content: "\e740";
 }
 .cuIcon-community:before {
-	content: "\E741";
+	content: "\e741";
 }
 .cuIcon-read:before {
-	content: "\E742";
+	content: "\e742";
 }
 .cuIcon-calendar:before {
-	content: "\E74A";
+	content: "\e74a";
 }
 .cuIcon-cut:before {
-	content: "\E74B";
+	content: "\e74b";
 }
 .cuIcon-magic:before {
-	content: "\E74C";
+	content: "\e74c";
 }
 .cuIcon-backwardfill:before {
-	content: "\E74D";
+	content: "\e74d";
 }
 .cuIcon-playfill:before {
-	content: "\E74F";
+	content: "\e74f";
 }
 .cuIcon-stop:before {
-	content: "\E750";
+	content: "\e750";
 }
 .cuIcon-tagfill:before {
-	content: "\E751";
+	content: "\e751";
 }
 .cuIcon-tag:before {
-	content: "\E752";
+	content: "\e752";
 }
 .cuIcon-group:before {
-	content: "\E753";
+	content: "\e753";
 }
 .cuIcon-all:before {
-	content: "\E755";
+	content: "\e755";
 }
 .cuIcon-backdelete:before {
-	content: "\E756";
+	content: "\e756";
 }
 .cuIcon-hotfill:before {
-	content: "\E757";
+	content: "\e757";
 }
 .cuIcon-hot:before {
-	content: "\E758";
+	content: "\e758";
 }
 .cuIcon-post:before {
-	content: "\E759";
+	content: "\e759";
 }
 .cuIcon-radiobox:before {
-	content: "\E75B";
+	content: "\e75b";
 }
 .cuIcon-rounddown:before {
-	content: "\E75C";
+	content: "\e75c";
 }
 .cuIcon-upload:before {
-	content: "\E75D";
+	content: "\e75d";
 }
 .cuIcon-writefill:before {
-	content: "\E760";
+	content: "\e760";
 }
 .cuIcon-write:before {
-	content: "\E761";
+	content: "\e761";
 }
 .cuIcon-radioboxfill:before {
-	content: "\E763";
+	content: "\e763";
 }
 .cuIcon-punch:before {
-	content: "\E764";
+	content: "\e764";
 }
 .cuIcon-shake:before {
-	content: "\E765";
+	content: "\e765";
 }
 .cuIcon-move:before {
-	content: "\E768";
+	content: "\e768";
 }
 .cuIcon-safe:before {
-	content: "\E769";
+	content: "\e769";
 }
 .cuIcon-activityfill:before {
-	content: "\E775";
+	content: "\e775";
 }
 .cuIcon-crownfill:before {
-	content: "\E776";
+	content: "\e776";
 }
 .cuIcon-crown:before {
-	content: "\E777";
+	content: "\e777";
 }
 .cuIcon-goodsfill:before {
-	content: "\E778";
+	content: "\e778";
 }
 .cuIcon-messagefill:before {
-	content: "\E779";
+	content: "\e779";
 }
 .cuIcon-profilefill:before {
-	content: "\E77A";
+	content: "\e77a";
 }
 .cuIcon-sound:before {
-	content: "\E77B";
+	content: "\e77b";
 }
 .cuIcon-sponsorfill:before {
-	content: "\E77C";
+	content: "\e77c";
 }
 .cuIcon-sponsor:before {
-	content: "\E77D";
+	content: "\e77d";
 }
 .cuIcon-upblock:before {
-	content: "\E77E";
+	content: "\e77e";
 }
 .cuIcon-weblock:before {
-	content: "\E77F";
+	content: "\e77f";
 }
 .cuIcon-weunblock:before {
-	content: "\E780";
+	content: "\e780";
 }
 .cuIcon-my:before {
-	content: "\E78B";
+	content: "\e78b";
 }
 .cuIcon-myfill:before {
-	content: "\E78C";
+	content: "\e78c";
 }
 .cuIcon-emojifill:before {
-	content: "\E78D";
+	content: "\e78d";
 }
 .cuIcon-emojiflashfill:before {
-	content: "\E78E";
+	content: "\e78e";
 }
 .cuIcon-flashbuyfill:before {
-	content: "\E78F";
+	content: "\e78f";
 }
 .cuIcon-text:before {
-	content: "\E791";
+	content: "\e791";
 }
 .cuIcon-goodsfavor:before {
-	content: "\E794";
+	content: "\e794";
 }
 .cuIcon-musicfill:before {
-	content: "\E795";
+	content: "\e795";
 }
 .cuIcon-musicforbidfill:before {
-	content: "\E796";
+	content: "\e796";
 }
 .cuIcon-card:before {
-	content: "\E624";
+	content: "\e624";
 }
 .cuIcon-triangledownfill:before {
-	content: "\E79B";
+	content: "\e79b";
 }
 .cuIcon-triangleupfill:before {
-	content: "\E79C";
+	content: "\e79c";
 }
 .cuIcon-roundleftfill-copy:before {
-	content: "\E79E";
+	content: "\e79e";
 }
 .cuIcon-font:before {
-	content: "\E76A";
+	content: "\e76a";
 }
 .cuIcon-title:before {
-	content: "\E82F";
+	content: "\e82f";
 }
 .cuIcon-recordfill:before {
-	content: "\E7A4";
+	content: "\e7a4";
 }
 .cuIcon-record:before {
-	content: "\E7A6";
+	content: "\e7a6";
 }
 .cuIcon-cardboardfill:before {
-	content: "\E7A9";
+	content: "\e7a9";
 }
 .cuIcon-cardboard:before {
-	content: "\E7AA";
+	content: "\e7aa";
 }
 .cuIcon-formfill:before {
-	content: "\E7AB";
+	content: "\e7ab";
 }
 .cuIcon-coin:before {
-	content: "\E7AC";
+	content: "\e7ac";
 }
 .cuIcon-cardboardforbid:before {
-	content: "\E7AF";
+	content: "\e7af";
 }
 .cuIcon-circlefill:before {
-	content: "\E7B0";
+	content: "\e7b0";
 }
 .cuIcon-circle:before {
-	content: "\E7B1";
+	content: "\e7b1";
 }
 .cuIcon-attentionforbid:before {
-	content: "\E7B2";
+	content: "\e7b2";
 }
 .cuIcon-attentionforbidfill:before {
-	content: "\E7B3";
+	content: "\e7b3";
 }
 .cuIcon-attentionfavorfill:before {
-	content: "\E7B4";
+	content: "\e7b4";
 }
 .cuIcon-attentionfavor:before {
-	content: "\E7B5";
+	content: "\e7b5";
 }
 .cuIcon-titles:before {
-	content: "\E701";
+	content: "\e701";
 }
 .cuIcon-icloading:before {
-	content: "\E67A";
+	content: "\e67a";
 }
 .cuIcon-full:before {
-	content: "\E7BC";
+	content: "\e7bc";
 }
 .cuIcon-mail:before {
-	content: "\E7BD";
+	content: "\e7bd";
 }
 .cuIcon-peoplelist:before {
-	content: "\E7BE";
+	content: "\e7be";
 }
 .cuIcon-goodsnewfill:before {
-	content: "\E7BF";
+	content: "\e7bf";
 }
 .cuIcon-goodsnew:before {
-	content: "\E7C0";
+	content: "\e7c0";
 }
 .cuIcon-medalfill:before {
-	content: "\E7C1";
+	content: "\e7c1";
 }
 .cuIcon-medal:before {
-	content: "\E7C2";
+	content: "\e7c2";
 }
 .cuIcon-newsfill:before {
-	content: "\E7C3";
+	content: "\e7c3";
 }
 .cuIcon-newshotfill:before {
-	content: "\E7C4";
+	content: "\e7c4";
 }
 .cuIcon-newshot:before {
-	content: "\E7C5";
+	content: "\e7c5";
 }
 .cuIcon-news:before {
-	content: "\E7C6";
+	content: "\e7c6";
 }
 .cuIcon-videofill:before {
-	content: "\E7C7";
+	content: "\e7c7";
 }
 .cuIcon-video:before {
-	content: "\E7C8";
+	content: "\e7c8";
 }
 .cuIcon-exit:before {
-	content: "\E7CB";
+	content: "\e7cb";
 }
 .cuIcon-skinfill:before {
-	content: "\E7CC";
+	content: "\e7cc";
 }
 .cuIcon-skin:before {
-	content: "\E7CD";
+	content: "\e7cd";
 }
 .cuIcon-moneybagfill:before {
-	content: "\E7CE";
+	content: "\e7ce";
 }
 .cuIcon-usefullfill:before {
-	content: "\E7CF";
+	content: "\e7cf";
 }
 .cuIcon-usefull:before {
-	content: "\E7D0";
+	content: "\e7d0";
 }
 .cuIcon-moneybag:before {
-	content: "\E7D1";
+	content: "\e7d1";
 }
 .cuIcon-redpacket_fill:before {
-	content: "\E7D3";
+	content: "\e7d3";
 }
 .cuIcon-subscription:before {
-	content: "\E7D4";
+	content: "\e7d4";
 }
 .cuIcon-loading1:before {
-	content: "\E633";
+	content: "\e633";
 }
 .cuIcon-github:before {
-	content: "\E692";
+	content: "\e692";
 }
 .cuIcon-global:before {
-	content: "\E7EB";
+	content: "\e7eb";
 }
 .cuIcon-settingsfill:before {
-	content: "\E6AB";
+	content: "\e6ab";
 }
 .cuIcon-back_android:before {
-	content: "\E7ED";
+	content: "\e7ed";
 }
 .cuIcon-expressman:before {
-	content: "\E7EF";
+	content: "\e7ef";
 }
 .cuIcon-evaluate_fill:before {
-	content: "\E7F0";
+	content: "\e7f0";
 }
 .cuIcon-group_fill:before {
-	content: "\E7F5";
+	content: "\e7f5";
 }
 .cuIcon-play_forward_fill:before {
-	content: "\E7F6";
+	content: "\e7f6";
 }
 .cuIcon-deliver_fill:before {
-	content: "\E7F7";
+	content: "\e7f7";
 }
 .cuIcon-notice_forbid_fill:before {
-	content: "\E7F8";
+	content: "\e7f8";
 }
 .cuIcon-fork:before {
-	content: "\E60C";
+	content: "\e60c";
 }
 .cuIcon-pick:before {
-	content: "\E7FA";
+	content: "\e7fa";
 }
 .cuIcon-wenzi:before {
-	content: "\E6A7";
+	content: "\e6a7";
 }
 .cuIcon-ellipse:before {
-	content: "\E600";
+	content: "\e600";
 }
 .cuIcon-qr_code:before {
-	content: "\E61B";
+	content: "\e61b";
 }
 .cuIcon-dianhua:before {
-	content: "\E64D";
+	content: "\e64d";
 }
 .cuIcon-cuIcon:before {
-	content: "\E602";
+	content: "\e602";
 }
 .cuIcon-loading2:before {
-	content: "\E7F1";
+	content: "\e7f1";
 }
 .cuIcon-btn:before {
-	content: "\E601";
+	content: "\e601";
 }
 .nav-list {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
 	        flex-wrap: wrap;
 	padding: 0px 40rpx 0px;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
 .nav-li {
@@ -4832,14 +4592,12 @@ scroll-view.cu-steps .cu-item {
 	border-radius: 10rpx;
 	opacity: 0.2;
 	-webkit-transform: scale(0.9, 0.9);
-	    -ms-transform: scale(0.9, 0.9);
 	        transform: scale(0.9, 0.9);
 }
 .nav-li.cur {
 	color: #fff;
 	background: rgb(94, 185, 94);
-	-webkit-box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
-	        box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
+	box-shadow: 4rpx 4rpx 6rpx rgba(94, 185, 94, 0.4);
 }
 .nav-title {
 	font-size: 32rpx;
@@ -4894,6 +4652,71 @@ scroll-view.cu-steps .cu-item {
 }
 .text-light {
 	font-weight: 300;
+}
+.m-input {
+	margin-top: 15rpx;
+	width: 100%;
+	min-height: 100%;
+}
+.input-group {
+	background-color: #ffffff;
+	margin-top: 40rpx;
+	position: relative;
+}
+.input-group::before {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	height: 1rpx;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.input-group::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1rpx;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.input-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	position: relative;
+}
+.input-row .title {
+	width: 20%;
+	height: 50rpx;
+	min-height: 50rpx;
+	padding: 15rpx 0;
+	padding-left: 30rpx;
+	line-height: 50rpx;
+}
+.input-row.border::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 15rpx;
+	height: 1rpx;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #c8c7cc;
+}
+.btn-row {
+	margin-top: 20rpx;
+	padding: 20rpx;
 }
 @keyframes show {
 0% {
