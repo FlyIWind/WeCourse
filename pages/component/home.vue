@@ -53,42 +53,7 @@
 									<text style="margin: 0px;" class="left-hand-index">{{item+1}}</text><br/>
 									<text style="margin: 0px;" class="left-hand-name">{{index}}</text>
 								</view>
-<!-- 								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-2">
-									<text style="margin: 0px;" class="left-hand-index">2</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">9:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-3">
-									<text style="margin: 0px;" class="left-hand-index">3</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">10:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-4">
-									<text style="margin: 0px;" class="left-hand-index">4</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">11:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-5">
-									<text style="margin: 0px;" class="left-hand-index">5</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">12:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-6">
-									<text style="margin: 0px;" class="left-hand-index">6</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">14:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-7">
-									<text style="margin: 0px;" class="left-hand-index">7</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">15:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-8">
-									<text style="margin: 0px;" class="left-hand-index">8</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">16:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-9">
-									<text style="margin: 0px;" class="left-hand-index">9</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">17:30</text>
-								</view>
-								<view style="width: 100%; height: 50px; box-sizing: border-box;" class="left-hand-10">
-									<text style="margin: 0px;" class="left-hand-index">10</text><br/>
-									<text style="margin: 0px;" class="left-hand-name">18:30</text>
-								</view> -->
+
 							</view>
 						</view>
 					</view>
@@ -227,6 +192,62 @@
 										"Color": newcourseColor[thisCourse.CourseName]
 									}
 								}
+								if (thisCourse.TimeOfTheDay == "1,2,3,4") {
+									that.Course[thisCourse.DayOfTheWeek][0] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][1] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "3,4,5,6") {
+									that.Course[thisCourse.DayOfTheWeek][1] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][2] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "5,6,7,8") {
+									that.Course[thisCourse.DayOfTheWeek][2] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][3] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "7,8,9,10") {
+									that.Course[thisCourse.DayOfTheWeek][3] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][4] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
 							}
 							console.log(that.Course);
 							that.$forceUpdate();
@@ -286,6 +307,7 @@
 							}
 							for (var i = 0; i < res.data.length; i++) {
 								var thisCourse = res.data[i];
+								console.log(thisCourse.TimeOfTheDay)
 								if (thisCourse.TimeOfTheDay == "1,2") {
 									that.Course[thisCourse.DayOfTheWeek][0] = {
 										"CourseName": thisCourse.CourseName,
@@ -319,6 +341,62 @@
 									}
 								}
 								if (thisCourse.TimeOfTheDay == "9,10") {
+									that.Course[thisCourse.DayOfTheWeek][4] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "1,2,3,4") {
+									that.Course[thisCourse.DayOfTheWeek][0] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][1] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "3,4,5,6") {
+									that.Course[thisCourse.DayOfTheWeek][1] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][2] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "5,6,7,8") {
+									that.Course[thisCourse.DayOfTheWeek][2] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+									that.Course[thisCourse.DayOfTheWeek][3] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
+								}
+								if (thisCourse.TimeOfTheDay == "7,8,9,10") {
+									that.Course[thisCourse.DayOfTheWeek][3] = {
+										"CourseName": thisCourse.CourseName,
+										"TeacherName": thisCourse.TeacherName,
+										"RoomName": thisCourse.RoomName,
+										"Color": newcourseColor[thisCourse.CourseName]
+									}
 									that.Course[thisCourse.DayOfTheWeek][4] = {
 										"CourseName": thisCourse.CourseName,
 										"TeacherName": thisCourse.TeacherName,
@@ -441,6 +519,62 @@
 								}
 							}
 							if (thisCourse.TimeOfTheDay == "9,10") {
+								that.Course[thisCourse.DayOfTheWeek][4] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+							}
+							if (thisCourse.TimeOfTheDay == "1,2,3,4") {
+								that.Course[thisCourse.DayOfTheWeek][0] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+								that.Course[thisCourse.DayOfTheWeek][1] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+							}
+							if (thisCourse.TimeOfTheDay == "3,4,5,6") {
+								that.Course[thisCourse.DayOfTheWeek][1] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+								that.Course[thisCourse.DayOfTheWeek][2] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+							}
+							if (thisCourse.TimeOfTheDay == "5,6,7,8") {
+								that.Course[thisCourse.DayOfTheWeek][2] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+								that.Course[thisCourse.DayOfTheWeek][3] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
+							}
+							if (thisCourse.TimeOfTheDay == "7,8,9,10") {
+								that.Course[thisCourse.DayOfTheWeek][3] = {
+									"CourseName": thisCourse.CourseName,
+									"TeacherName": thisCourse.TeacherName,
+									"RoomName": thisCourse.RoomName,
+									"Color": newcourseColor[thisCourse.CourseName]
+								}
 								that.Course[thisCourse.DayOfTheWeek][4] = {
 									"CourseName": thisCourse.CourseName,
 									"TeacherName": thisCourse.TeacherName,
